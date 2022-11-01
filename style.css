@@ -1,0 +1,17 @@
+#container-box {
+  background-color: pink;
+
+  font-size: 2vh;
+  color: deeppink;
+  text-align: center;
+  padding: 2vh;
+}
+
+.cat-poster {
+  width: 10rem;
+}
+
+body {
+  background: lightblue;
+  font-family: "Kosugi Maru", sans-serif;
+}

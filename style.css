@@ -6,9 +6,19 @@
   text-align: center;
   padding: 2vh;
 }
-
+#text {
+  font-size: 5rem;
+}
 .cat-poster {
   width: 10rem;
+}
+.info {
+  font-size: 2rem;
+}
+
+.name {
+  font-size: 20px;
+  color: darkblue;
 }
 
 body {

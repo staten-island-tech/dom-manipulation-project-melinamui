@@ -18,12 +18,26 @@
     <div id="container-box">
       <p id="text">Random Anime for When You're Bored</p>
       <input type="text" id="input" />
-      <input type="text" id="input" />
-      <input type="text" id="input" />
       <button type="button" id="btn">Click Me!</button>
+      <form>
+        <select id="myList" onchange="favTutorial()">
+          <option>---Choose Genre---</option>
+          <option>Action</option>
+          <option>Romance</option>
+          <option>Comedy</option>
+        </select>
+      </form>
     </div>
 
     <script src="main.js"></script>
     <!-- linking the javasript file -->
+
+    <script>
+      function favTutorial() {
+        var mylist = document.getElementById("myList");
+        document.getElementById("favourite").value =
+          mylist.options[mylist.selectedIndex].text;
+      }
+    </script>
   </body>
 </html>

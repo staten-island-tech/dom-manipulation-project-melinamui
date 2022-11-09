@@ -28,4 +28,5 @@ DOMSelectors.button.insertAdjacentHTML(
   `<p class="info">All you have to do is type and click :D<p>
     <img src="https://media.wired.com/photos/5f87340d114b38fa1f8339f9/master/w_1600%2Cc_limit/Ideas_Surprised_Pikachu_HD.jpg" class="pika"></img>`
 );
+
 // you can put multiple HTML tags in the same DOMSelector as if you were writing out regular HTML, you're also able to assigned classes and ids that can be used for styling the elements you add through js.

@@ -19,25 +19,37 @@
       <p id="text">Random Anime for When You're Bored</p>
       <input type="text" id="input" />
       <button type="button" id="btn">Click Me!</button>
-      <form>
-        <select id="myList" onchange="favTutorial()">
-          <option>---Choose Genre---</option>
-          <option>Action</option>
-          <option>Romance</option>
-          <option>Comedy</option>
-        </select>
-      </form>
-    </div>
-
-    <script src="main.js"></script>
+      <section class="form-parent">
+        <form id="form">
+            <div class="form-inputs">
+                <div class="form-input">
+                    <label for="title">Album Name</label>
+                    <input type="text" id="title" class="text-box" required>
+                </div>
+                <div class="form-input">
+                    <label for="artist">Artist</label>
+                    <input type="text" id="artist" class="text-box" required>
+                </div>
+                <div class="form-input">
+                    <label for="url">Enter Image URL Here</label>
+                    <input type="text" id="url" class="text-box" required>
+                </div>
+            </div>
+            <div class="hero-form-input">
+                <input type="submit" value="Submit" class="btn">
+            </div>
+        </form>
+    <!--
+    <section class="display" id="display">
+        <div class="display-card">
+            <img class="display-img" src="https://www.gannett-cdn.com/presto/2019/08/08/USAT/dc1fe9c6-d585-42c4-9c69-e31cc46e4c94-ABBEY_ROAD.JPG?auto=webp&crop=1481,834,x0,y265&format=pjpg&width=1200"/>
+            <h2 class="display-artist">Beatles</h2>
+            <h3 class="display-album">Abbey Road</h3>
+             <button class="remove btn">Remove Album</button>
+        </div>
+    </section>-->
+    <script src="main.js" type="module"></script>
     <!-- linking the javasript file -->
 
-    <script>
-      function favTutorial() {
-        var mylist = document.getElementById("myList");
-        document.getElementById("favourite").value =
-          mylist.options[mylist.selectedIndex].text;
-      }
-    </script>
   </body>
 </html>

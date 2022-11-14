@@ -9,20 +9,24 @@
 }
 #text {
   font-size: 5rem;
+  padding: 2vh;
 }
 
 .info {
   font-size: 2rem;
+  padding: 2vh;
 }
 .pika {
   border-radius: 25px;
   border: 6px solid #f7cb05;
-  padding: 20px;
-  width: 10%;
+  padding: 10px;
+  width: 15%;
 }
 .name {
   font-size: 20px;
   color: darkblue;
+  margin-top: 20px;
+  margin-left: 20px;
 }
 
 body {

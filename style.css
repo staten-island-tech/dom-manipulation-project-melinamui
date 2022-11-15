@@ -79,7 +79,7 @@ h5 {
 #form {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   height: 50vh;
 }
@@ -93,8 +93,8 @@ h5 {
   letter-spacing: 3px;
 }
 .text-box {
-  width: 22rem;
-  height: 2.5rem;
+  width: 23rem;
+  height: 10rem;
   font-size: 2rem;
 }
 .form-input {
@@ -102,7 +102,7 @@ h5 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 1rem;
+  margin: 4rem;
   height: 10vh;
 }
 .btn,
@@ -127,6 +127,12 @@ h5 {
 .btn:active {
   transform: translateY(-1px);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0.2);
+}
+
+.btn {
+  color: deeppink;
+  background-color: #e8fbff;
+  border-color: dodgerblue;
 }
 
 .display {
@@ -164,4 +170,14 @@ h5 {
   border: none;
   background-color: red;
   color: white;
+}
+
+label {
+  font-size: 3rem;
+  padding: 4vh;
+}
+
+#options {
+  font-size: 15px;
+  padding-bottom: 10px;
 }

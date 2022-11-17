@@ -4,6 +4,24 @@ const DOMSelectors = {
   input: document.querySelector(`#input`),
 };
 
+const ForCards = [
+  {
+    genre: "Romance",
+    gender: "Male",
+    hotness: "Really Hot",
+  },
+];
+
+let img = document.createElement("img");
+img.src =
+  "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F714805772079528788%2F&psig=AOvVaw20IIdAxzO4jftezTjZ5u0s&ust=1668797407980000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCMCMnOfwtfsCFQAAAAAdAAAAABAD";
+
+if (ForCards === ["Romance", "Male", "Really Hot"]) {
+  img.addEventListener("click", function () {
+    console.log("clicked");
+  });
+}
+
 DOMSelectors.box.insertAdjacentHTML(
   "beforebegin",
   `<p class = "name">For DOM Manipulation Project<p>`

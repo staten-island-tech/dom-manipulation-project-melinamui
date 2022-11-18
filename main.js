@@ -12,9 +12,9 @@ const ForCards = [
   },
 ];
 
-let img = document.createElement("img");
-img.src =
-  "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F714805772079528788%2F&psig=AOvVaw20IIdAxzO4jftezTjZ5u0s&ust=1668797407980000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCMCMnOfwtfsCFQAAAAAdAAAAABAD";
+/*const img = document.createElement("img");
+img.src = "uzui.jpg";
+document.body.appendChild(img);*/
 
 if (ForCards === ["Romance", "Male", "Really Hot"]) {
   img.addEventListener("click", function () {

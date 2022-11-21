@@ -3,7 +3,28 @@ const DOMSelectors = {
   box: document.getElementById("container-box"),
   input: document.querySelector(`#input`),
 };
+console.log(DOMSelectors);
 
+DOMSelectors.button.addEventListener("click", function (cards) {
+  cards.preventDefault();
+  let anime = {};
+  anime.genre = document.getElementById("genre").value;
+  anime.gender = document.getElementById("gender").value;
+  anime.hotness = document.getElementById("hotness").value;
+  console.log(anime);
+
+  DOMSelectors.button.insertAdjacentHTML(
+    "beforeend",
+    `
+/*const img = document.createElement("img");
+let img = 
+    <img.src = "uzui.jpg"></img.src>
+    document.body.appen
+    
+    `
+  );
+});
+/*
 const ForCards = [
   {
     genre: "Romance",
@@ -11,6 +32,7 @@ const ForCards = [
     hotness: "Really Hot",
   },
 ];
+*/
 
 /*const img = document.createElement("img");
 img.src = "uzui.jpg";
@@ -21,11 +43,6 @@ if (ForCards === ["Romance", "Male", "Really Hot"]) {
     console.log("clicked");
   });
 }
-
-document.getElementById("form").addEventListener("submit"), function (e) {
-  e.preventDefault()
-  
-};
 
 /*
 DOMSelectors.box.insertAdjacentHTML(

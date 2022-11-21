@@ -22,6 +22,12 @@ if (ForCards === ["Romance", "Male", "Really Hot"]) {
   });
 }
 
+document.getElementById("form").addEventListener("submit"), function (e) {
+  e.preventDefault()
+  
+};
+
+/*
 DOMSelectors.box.insertAdjacentHTML(
   "beforebegin",
   `<p class = "name">For DOM Manipulation Project<p>`
@@ -40,6 +46,7 @@ DOMSelectors.button.addEventListener("click", function () {
       `
   );
 }); // this function will cause new HTML to be added when the input button is clicked.
+*/
 
 DOMSelectors.button.insertAdjacentHTML(
   "afterend",

@@ -1,29 +1,43 @@
 const DOMSelectors = {
-  button: document.getElementById("btn"),
-  box: document.getElementById("container-box"),
-  input: document.querySelector(`#input`),
+  display: document.getElementById("display"),
+  form: document.getElementById("form"),
+  container: document.getElementById("container-box"),
+  button: document.getElementById("btn")
 };
 console.log(DOMSelectors);
 
-DOMSelectors.button.addEventListener("click", function (cards) {
+DOMSelectors.form.addEventListener("submit", 
+
+function (cards) {
   cards.preventDefault();
   let anime = {};
-  anime.genre = document.getElementById("genre").value;
-  anime.gender = document.getElementById("gender").value;
-  anime.hotness = document.getElementById("hotness").value;
+  anime.genre = DOMSelectors("genre").value;
+  anime.gender = DOMSelectors("gender").value;
+  anime.hotness = DOMSelectors("hotness").value;
   console.log(anime);
 
-  DOMSelectors.button.insertAdjacentHTML(
+DOMSelectors.display.insertAdjacentHTML(
     "beforeend",
     `
-/*const img = document.createElement("img");
-let img = 
-    <img.src = "uzui.jpg"></img.src>
-    document.body.appen
-    
+    <section class = "display" id = "usui"> 
+    <div class = "display-card">   
+      <h2 class = "display-anime"> ${anime.genre} </h2>
+      <h3 class = "display-name">  ${anime.hotness} </h3>
+      <h4 class = "display-gender"> ${anime.gender} </h4>
+      <img class = "display-img" src = "usui.jpg">    
+      <button class = "remove btn"> Remove </button>
+    </div>
+  </section>   
     `
   );
+  DOMSelectors("genre").value = "";
+  DOMSelectors("gender").value ="";
+  DOMSelectors("hotness").value ="";
+
 });
+
+
+
 /*
 const ForCards = [
   {
@@ -32,11 +46,11 @@ const ForCards = [
     hotness: "Really Hot",
   },
 ];
-*/
 
-/*const img = document.createElement("img");
+
+const img = document.createElement("img");
 img.src = "uzui.jpg";
-document.body.appendChild(img);*/
+document.body.appendChild(img);
 
 if (ForCards === ["Romance", "Male", "Really Hot"]) {
   img.addEventListener("click", function () {
@@ -44,7 +58,7 @@ if (ForCards === ["Romance", "Male", "Really Hot"]) {
   });
 }
 
-/*
+
 DOMSelectors.box.insertAdjacentHTML(
   "beforebegin",
   `<p class = "name">For DOM Manipulation Project<p>`
@@ -63,13 +77,14 @@ DOMSelectors.button.addEventListener("click", function () {
       `
   );
 }); // this function will cause new HTML to be added when the input button is clicked.
-*/
 
 DOMSelectors.button.insertAdjacentHTML(
   "afterend",
   `<p class="info">All you have to do is type and click :D<p>
     <img src="https://media.wired.com/photos/5f87340d114b38fa1f8339f9/master/w_1600%2Cc_limit/Ideas_Surprised_Pikachu_HD.jpg" class="pika"></img>`
 );
+*/
+
 
 // you can put multiple HTML tags in the same DOMSelector as if you were writing out regular HTML, you're also able to assigned classes and ids that can be used for styling the elements you add through js.
 

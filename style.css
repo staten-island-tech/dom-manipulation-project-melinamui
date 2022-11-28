@@ -1,34 +1,3 @@
-#container-box {
-  background-color: pink;
-
-  font-size: 2vh;
-  color: deeppink;
-  text-align: center;
-  padding: 2vh;
-  margin: 2%;
-}
-#text {
-  font-size: 5rem;
-  padding: 2vh;
-}
-
-.info {
-  font-size: 2rem;
-  padding: 2vh;
-}
-.pika {
-  border-radius: 25px;
-  border: 6px solid #f7cb05;
-  padding: 10px;
-  width: 15%;
-}
-.name {
-  font-size: 20px;
-  color: darkblue;
-  margin-top: 20px;
-  margin-left: 20px;
-}
-
 body {
   background: lightblue;
   font-family: "Kosugi Maru", sans-serif;
@@ -40,136 +9,92 @@ body {
   padding: 0;
   margin: 0;
 }
-:root {
-  /* Type */
-  --h1: 7.594rem;
-  --h2: 5.063rem;
-  --h3: 3.375rem;
-  --h4: 2.25rem;
-  --h5: 1.5rem;
-  --smallText: 0.8rem;
-}
-h1 {
-  margin-top: 0;
-  font-size: var(--h1);
-}
 
-h2 {
-  font-size: var(--h2);
-}
 
-h3 {
-  font-size: var(--h3);
-}
-
-h4 {
-  font-size: var(--h4);
-}
-
-h5 {
-  font-size: var(--h5);
-}
-h1,
-h2,
-h3,
-h4,
-h5 {
-  text-align: center;
-}
-#form {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  height: 40%;
-}
-.user-input {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size: 2.5rem;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-}
-.text-box {
-  width: 23rem;
-  height: 10rem;
-  font-size: 2rem;
-}
-.form-input {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 4rem;
-  height: 10vh;
-}
-.btn,
-.btn:link,
-.btn:visited {
-  text-transform: uppercase;
-  text-decoration: none;
-  padding: 1.5rem 4rem;
-  display: inline-block;
-  margin: 1rem;
-  font-size: 2rem;
-  border-radius: 10rem;
-  transition: all 0.2s;
-  position: relative;
-  animation: moveInBottom 0.5s ease-out 0.75s;
-  animation-fill-mode: backwards;
-}
-.btn:hover {
-  transform: translateY(-0.3rem);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0.2);
-}
-.btn:active {
-  transform: translateY(-1px);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0.2);
-}
-
-.btn {
+#container {
+  background-color: pink;
+  font-size: 2vh;
   color: deeppink;
-  background-color: #e8fbff;
-  border-color: dodgerblue;
+  text-align: center;
+  padding: 2vh;
+  margin: 2%;
 }
-
-.display {
+#display {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
   width: 90vw;
-  margin: 2rem auto;
+  margin: 1rem auto;
 }
-.display-card {
+
+#card {
+  background-color: palevioletred;
+  color: white;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 26%;
-  height: 55rem;
+  width: 50%;
+  height: 100%;
   margin: 1rem auto;
-  background-color: #131313;
-  color: white;
   align-items: center;
 }
-.display-img {
-  width: 100%;
-  height: auto;
+
+#cover {
+  width: 80%;
 }
-.display-artist,
-.display-album {
-  font-size: var(--h3);
+
+#text {
+  font-size: 5rem;
+  padding: 2vh;
 }
-.remove {
-  padding: 1rem 2rem;
-  display: inline-block;
-  margin: 1rem;
-  font-size: 1rem;
-  border: none;
-  background-color: red;
-  color: white;
+
+#pika {
+  border-radius: 25px;
+  border: 6px solid #f7cb05;
+  padding: 10px;
+  width: 15%;
+}
+
+#note {
+  font-size: 30px;
+  padding: 20px;
+}
+
+#example-header {
+  font-size: 30px;
+  padding: 10px;
+  text-align: left;
+  color: dodgerblue;
+}
+
+#example {
+  font-size: 20px;
+  padding: 10px;
+  text-align: left;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 40%;
+}
+
+.text-box {
+  width: 23rem;
+  height: 10rem;
+  font-size: 2rem;
+}
+
+#inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem;
+  height: 5vh;
 }
 
 label {
@@ -177,13 +102,73 @@ label {
   padding: 4vh;
 }
 
-#options {
-  font-size: 15px;
-  padding-bottom: 10px;
+#btn,
+#btn:link,
+#btn:visited {
+text-transform: uppercase;
+text-decoration: none;
+padding: 2rem 4rem;
+display: inline-block;
+margin: 1rem;
+font-size: 2rem;
+border-radius: 10rem;
+transition: all 0.2s;
+position: relative;
+animation: moveInBottom 0.5s ease-out 0.75s;
+animation-fill-mode: backwards;
+}
+#btn:hover {
+transform: translateY(-0.3rem);
+box-shadow: 0 1rem 2rem rgba(0, 0, 0.2);
+}
+#btn:active {
+transform: translateY(-1px);
+box-shadow: 0 0.5rem 1rem rgba(0, 0, 0.2);
 }
 
-#note {
-  font-size: 30px;
-  padding: 20px;
-
+#btn {
+color: deeppink;
+background-color: #e8fbff;
+border-color: dodgerblue;
 }
+
+#remove,
+#remove:link,
+#remove:visited {
+text-transform: uppercase;
+text-decoration: none;
+padding: 2rem 4rem;
+display: inline-block;
+margin: 1rem;
+font-size: 2rem;
+border-radius: 10rem;
+transition: all 0.2s;
+position: relative;
+animation: moveInBottom 0.5s ease-out 0.75s;
+animation-fill-mode: backwards;
+}
+#remove:hover {
+transform: translateY(-0.3rem);
+box-shadow: 0 1rem 2rem rgba(0, 0, 0.2);
+}
+#remove:active {
+transform: translateY(-1px);
+box-shadow: 0 0.5rem 1rem rgba(0, 0, 0.2);
+}
+
+#remove {
+color: darkblue;
+background-color: lightpink;
+border-color: deeppink;
+}
+
+#card-text {
+  font-size: 3rem;
+  padding: 2vh;
+}
+
+
+
+
+
+

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Check Console :D</title>
+    <title>Anime :D</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,44 +15,47 @@
   </head>
 
   <body>
-    <div id="container-box">
+    <div id="container">
       <p id="text">Random Anime for When You're Bored</p>
       <p id="note">Limited options because this isnt a free country :)</p>
-      <img class = "pika" src="https://media.wired.com/photos/5f87340d114b38fa1f8339f9/master/w_1600%2Cc_limit/Ideas_Surprised_Pikachu_HD.jpg" class="pika"></img>
-      <section class="form-parent">
-        <form id="form">
-            <div class="form-inputs">
-                <div class="form-input">
-                    <label for="genre">Genre</label>
-                    <p id="options">Options: Romance </p>
-                    <input type="text" id="genre" class="text-box" required>
-                </div>
-                <div class="form-input">
-                    <label for="gender">Male</label>
-                    <input type="text" id="gender" class="text-box" required>
-                </div>
-                <div class="form-input">
-                    <label for="hotness">Really Hot </label>
-                    <input type="text" id="hotness" class="text-box" required>
-                </div>
-            </div>
-            <div class="button">
-                <input type="submit" value="Submit" class="btn">
-            </div>
-        </form>
-        </section>
-<div class = "display" id = "usui"> <!-- 
-  <div class = "display-card">   
-    
-    <h2 class = "display-anime"> Maid Sama!</h2>
-    <h3 class = "display-name"> Usui </h3>
-    <h4 class = "display-gender"> Male </h4>
-    <img class = "display-img" src = "usui.jpg">    
-    <button class = "remove btn"> Remove</button> 
-  </div>-->
-</div>          
-    <script src="main.js" type="module"></script>
-    <!-- linking the javasript file -->
+      <img id = "pika" src="https://media.wired.com/photos/5f87340d114b38fa1f8339f9/master/w_1600%2Cc_limit/Ideas_Surprised_Pikachu_HD.jpg" class="pika"></img>
+      <p id="example-header">Example </p>
+      <p id="example">Classroom of the Elite </p>
+      <p id="example">Shōgo Kinugasa  </p>
+      <p id="example">https://animecorner.me/wp-content/uploads/2022/05/classroom-of-the-elite-year-2-7.jpg </p>
+    <div class = "form-parent">
+    <form id="form">
+      <div id="inputs">
+        <label for="anime">Anime</label>
+        <input type="text" id="anime" class ="text-box" required>
+      </div>
+      <div id="inputs">
+        <label for="creator">Creator</label>
+        <input type="text" id="creator" class ="text-box" required>
+      </div>
+      <div id="inputs">
+        <label for="cover">Cover(Link)</label>
+        <input type="text" id="cover" class ="text-box" required>
+      </div>
+  </div>
+  <div id="button">
+    <input type="submit" value="Submit" id="btn">
+  </div>
+  </form>
+  
 
-  </body>
+  <div id = "display">
+  <!--
+   <div id = "card">
+      <p id="card-text"> ${anime}</p>
+      <p id="card-text"> ${creator}</p>
+      <img id="cover" src="${cover}"/>
+      <button id="remove"> Remove </button>
+    </div>
+  -->
+</div>
+</div>
+  <script src="main.js" type="module"></script>
+  <!-- linking the javasript file -->
+</body>
 </html>
